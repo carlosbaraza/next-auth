@@ -46,8 +46,10 @@ export default async (req, res, userSuppliedOptions) => {
 
     // @todo refactor all existing references to site, baseUrl and basePath
     const parsedUrl = parseUrl(process.env.NEXTAUTH_URL || process.env.VERCEL_URL)
-    const baseUrl = parsedUrl.baseUrl
-    const basePath = parsedUrl.basePath
+    let baseUrl = parsedUrl.baseUrl
+    if (userSuppliedOptions.baseUrl) baseUrl = userSuppliedOptions.baseUrl;
+    let basePath = parsedUrl.basePath
+    if (userSuppliedOptions.basePath) basePath = userSuppliedOptions.basePath;
 
     // Parse database / adapter
     let adapter
