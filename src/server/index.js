@@ -50,6 +50,7 @@ export default async (req, res, userSuppliedOptions) => {
     if (userSuppliedOptions.baseUrl) baseUrl = userSuppliedOptions.baseUrl;
     let basePath = parsedUrl.basePath
     if (userSuppliedOptions.basePath) basePath = userSuppliedOptions.basePath;
+    console.log("basePath", basePath)
 
     // Parse database / adapter
     let adapter

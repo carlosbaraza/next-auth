@@ -77,11 +77,12 @@
     "babel-preset-preact": "^2.0.0",
     "cssnano": "^4.1.10",
     "mongodb": "^3.5.9",
-    "mysql": "^2.18.1",
     "mssql": "^6.2.1",
+    "mysql": "^2.18.1",
     "pg": "^8.2.1",
     "postcss-cli": "^7.1.1",
     "postcss-nested": "^4.2.1",
+    "react": "^16.13.1",
     "standard": "^14.3.3"
   }
 }
